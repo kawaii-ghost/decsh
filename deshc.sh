@@ -4,6 +4,6 @@ do
   $arg > /dev/null & child=$!
   sleep 0.01
   kill -STOP $child
-  head -n 1 /proc/$child/cmdline | sed 's/.*\(#!\)/\1/; $d' > $arg.dec.sh
+  cat /proc/$child/cmdline | sed 's/.*\(#!\)/\1/; $d' > $arg.dec.sh
   kill -TERM $child
 done
