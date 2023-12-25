@@ -17,3 +17,5 @@ Give time with `sleep 0.01` and the send `SIGSTOP` signal after that so atleast 
 SHC works internally called `execve` to shell, it decrypted at runtimes and visible via command line args process
 
 eg: `/bin/sh -c "decrypted shell"`
+
+Read my Indonesian writeup here https://medium.com/@kaw411gh0st/membongkar-program-shc-encrypted-shell-script-1d945b76080b
