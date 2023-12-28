@@ -1,7 +1,10 @@
 # deshc
 Shell Script to decrypt SHC
+
+> Due to Android people complaining about shebang because system hiearchy problem, I recommend you to run it via shell instead of treateing it as an executable
+
 ```sh
-Usage : ./deshc.sh <shc binary>
+Usage : sh ./deshc.sh <shc binary>
 ```
 Example : `./deshc.sh ./shcfiles.sh`
 
