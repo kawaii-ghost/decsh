@@ -1,7 +1,7 @@
 # deshc
 Shell Script to decrypt SHC
 
-> Due to Android people complaining about shebang because system hiearchy problem, I recommend you to run it via shell instead of treateing it as an executable
+> Due to Android user complaining about shebang because system hiearchy problem, I recommend you to run it via shell instead of treating it as an executable
 
 ```sh
 Usage : sh ./deshc.sh <shc binary>
@@ -14,7 +14,7 @@ Multiple files are supported
 
 # SECURITY 
 This shell script still execute in the machine. I still configuring it by using `prlimit --pid <pid> --nofile=X` so it can only open the shared library.
-Give time with `sleep 0.01` and the send `SIGSTOP` signal after that so atleast the shell script isn't running while being decrypted.
+Give time with `sleep 0.01` until it calls `execve` and then send `SIGSTOP` signal after that so atleast the shell script isn't running while being decrypted.
 
 # How does it work?
 SHC works internally called `execve` to shell, it decrypted at runtimes and visible via command line args process
