@@ -1,4 +1,4 @@
-# decsc
+# decsh
 Shell Script to decrypt SHC and SSC
 
 > Due to Android user complaining about shebang because system hiearchy problem, I recommend you to run it via shell instead of treating it as an executable
